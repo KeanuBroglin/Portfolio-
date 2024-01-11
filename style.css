@@ -1,0 +1,23 @@
+.navbar ul{
+    list-style-type: none;
+    background-color: darkred;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 80px;
+}
+.navbar a{
+    color: plum;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: springgreen;
+}
+.navbar{
+    float: left;
+}
