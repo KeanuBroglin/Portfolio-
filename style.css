@@ -1,3 +1,7 @@
+html{
+    height: 100vh;
+    overflow: hidden;
+}
 .navbar ul{
     list-style-type: none;
     background-color: darkred;
@@ -20,4 +24,67 @@
 }
 .navbar{
     float: left;
+}
+body{
+    background:#222;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+h1{
+    color: #FFFFFF;
+    font-family: "Press Start 2P", "consolas", sans-serif;
+}
+p {
+    color: #00FF73;
+    font-family: "consolas", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+}
+.section1, .section2 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.section1::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("https://i.pinimg.com/originals/43/c9/65/43c9653e3a717d4a80a0551ebec6c978.png") top center;
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.2);
+    filter: blur(2px);
+}
+.section1::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4c208d33-9bf9-4217-8941-f9ceac3c8824/dfy65t4-816fbae9-352d-4de5-9257-530788ed58d3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRjMjA4ZDMzLTliZjktNDIxNy04OTQxLWY5Y2VhYzNjODgyNFwvZGZ5NjV0NC04MTZmYmFlOS0zNTJkLTRkZTUtOTI1Ny01MzA3ODhlZDU4ZDMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Y6SlWK5XyScePn7F0a_C7Q164RIbTm38iVjB3_XnjjY") top center;
+    background-size: cover;
+}
+.section1 .text {
+    top: 10%;
+    transform: translateZ(-0.5px) scale(1.5,1.6) translate(-33%,10%);
+}
+.section2 {
+    background: plum;
+}
+.text {
+    top:30%;
+    left:50%;
+    position: absolute;
+    font-family: "Comic Sans MS";
+    font-size: 15vw;
+    color: mintcream;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
+    5px 5px 70px rgba(255,255,255,0.5);
+    transform: scale(1,1.1) translate(-50%, 10%);
 }
