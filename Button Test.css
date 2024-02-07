@@ -1,0 +1,37 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: grey;
+}
+button {
+    width: 224px;
+    height: 95px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #100720;
+    transition: 0.1s;
+}
+button:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient( circle
+    farthest-corner at 10% 20%, rgb(208, 114, 215) 17.8%, rgb(46, 80, 234) 100.2% );
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+button:active {
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient( circle
+        farthest-corner at at 10% 20%, rgb(208, 114, 215) 17.8%, rgb(30, 20, 201) 100.2% );
+    filter: blur(15px);
+    transition: 0.5s;
+}
