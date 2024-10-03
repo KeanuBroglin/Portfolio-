@@ -1,0 +1,14 @@
+body {
+    margin: 40px;
+}
+header{
+    background-color: #ff9494;
+    margin: 10px;
+}
+main{
+    background-color: #ffa2eb;
+    margin: 20px;
+}
+footer{
+    background-color: #e1c0ff;
+}
