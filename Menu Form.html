@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+<h1>Keanu's Food Menu</h1>
+<form>
+    <fieldset>
+        <legend>INFO</legend>
+        First Name: <input type="text" name="firstname"/>
+        <br>
+        <br>
+        Last Name: <input type="text" name="lastname"/>
+    </fieldset>
+    <fieldset>
+        <legend>Food Preferences</legend>
+        <label for="Sauce">What sauce level do you Prefer?</label>
+        <select name="Sauce" id="Sauce">
+            <optgroup>
+                <option class="Heavy">Heavy</option>
+                <option class="Lightly">Lightly</option>
+                <option class="Buried">Buried</option>
+                <option class="None">None</option>
+            </optgroup>
+        </select>
+        <h1>Choose Your Favorite Topping on Pizza</h1>
+        <ol>
+            <input type="radio" id="Radio Layer1" name="fav_language" value="Radio Layer1">
+            <label for="Radio Layer1">Pepperoni</label><br>
+            <input type="radio" id="Radio Layer2" name="fav_language" value="Radio Layer2">
+            <label for="Radio Layer2">Meat</label><br>
+            <input type="radio" id="Radio Layer3" name="fav_language" value="Radio Layer3">
+            <label for="Radio Layer3">Veggie</label>
+        </ol>
+    </fieldset>
+    <br>
+    <input type="submit">
+</form>
+</body>
+</html>
